@@ -1,0 +1,26 @@
+model: MCUNET
+
+in_channels: 3
+out_channels: 2
+batch_size: 1
+learning_rate: 0.001
+epochs: 400
+iters: 100000
+patience: 20
+interpolate: false
+final_sigmoid: false
+resume: null
+
+use_corner: 0.15
+use_density: 0
+randseed: 5000
+model_deep: 3
+M_channel: 3
+resample: false
+resample_num: 134
+resample_by_manual: false
+weight_decay: 0
+init_channel_number: 64
+log_level: INFO
+M_R: 0
+dataset_path: ./datasets/T24ALL
