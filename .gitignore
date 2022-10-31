@@ -1,0 +1,17 @@
+datasets/
+pic_save/
+result/
+results/
+
+**/__pycache__
+.idea/
+checkpoints/
+work_dirs/
+pred_results/
+tmp/
+./dataset.py
+
+logs/
+*.log
+.vscode/
+debug/
