@@ -1,7 +1,7 @@
 # Joint Feature Learning for Cell Segmentation Based on Multi-scale Convolutional U-Net
 
 <!-- > **The Paper Links**: [](), [Arxiv](). -->
-> **Authors:** [Zhichao Jin](), [Haigen Hu](), [Qianwei Zhou](), [Qiu Quan](), [Xiaoxin Li](), [Qi Chen]()
+> **Authors:** [Zhichao Jin](https://github.com/jinzcdev), [Haigen Hu](), [Qianwei Zhou](), [Qiu Quan](), [Xiaoxin Li](), [Qi Chen]()
 
 ## Abstract
 A major challenge in the analysis of tissue imaging data is cell segmentation, the task of identifying precisely the boundary of each cell in a microscopic image. The cell seg- mentation task is still challenging due to the variable shapes, large size differences, uneven grayscale, and dense distribution of biological cells in microscopic images. In this paper, we propose a joint feature learning method that integrates the density and boundary branch into a multi-scale convolutional U-Net (MC- Unet). To enhance the supervision of cell density and boundary detection, the density and boundary loss is constructed to guide the joint learning of multiple features, where the density loss branch can address the challenges posed by high density, while the boundary loss branch can address the problems of unclear cell boundaries and partial cell occlusion. A series of experiments on different cell datasets show that two auxiliary branches improve the learning of features on cell density and cell boundaries and that the proposed method is effective on different segmentation models.
@@ -44,5 +44,15 @@ patience: 20
 Finally, run `python train.py configs/{cfg_name}.yml`, and then the training logs will be saved in `./work_dirs` folder by default.
 
 
-<!-- ## 5. Citation
-Please cite our paper if you find the work useful:  -->
+## 5. Citation
+Please cite our paper if you find the work useful:
+
+```
+@INPROCEEDINGS{9995235,
+  author={Jin, Zhichao and Hu, Haigen and Zhou, Qianwei and Guan, Qiu and Li, Xiaoxin and Chen, Qi},
+  booktitle={2022 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)}, 
+  title={Joint Feature Learning for Cell Segmentation Based on Multi-scale Convolutional U-Net}, 
+  year={2022},
+  pages={1580-1585},
+  doi={10.1109/BIBM55620.2022.9995235}}
+```
